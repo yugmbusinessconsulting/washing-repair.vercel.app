@@ -30,6 +30,11 @@ export const metadata: Metadata = {
     description: "Same-day doorstep washing machine repair. All brands. Genuine parts.",
     type: "website",
   },
+  icons: {
+    icon: "/logo-icon.svg",
+    shortcut: "/logo-icon.png",
+    apple: "/logo-icon.png",
+  },
 };
 
 export default function RootLayout({

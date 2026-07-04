@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
-import { WashingMachine, PhoneCall } from "lucide-react";
+import Image from "next/image";
+import { PhoneCall } from "lucide-react";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -28,7 +29,7 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
         {/* Logo */}
         <a href="#home" className="flex items-center gap-2">
-          <WashingMachine className="w-6 h-6 text-indigo-600" />
+          <Image src="/logo-icon.svg" alt="Home Appliances Repair logo" width={28} height={28} className="w-7 h-7" />
           <div className="leading-tight">
             <span className="font-bold text-lg text-slate-900 block">
               Home Appliances Repair

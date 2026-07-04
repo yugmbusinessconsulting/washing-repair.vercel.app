@@ -1,4 +1,5 @@
-import { WashingMachine, MapPin, Phone, Mail } from "lucide-react";
+import Image from "next/image";
+import { MapPin, Phone, Mail } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -8,7 +9,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <WashingMachine className="w-8 h-8 text-indigo-500" />
+              <Image src="/logo-icon.svg" alt="Home Appliances Repair logo" width={36} height={36} className="w-9 h-9" />
               <div>
                 <span className="font-black text-xl text-white block">
                   Home Appliances Repair

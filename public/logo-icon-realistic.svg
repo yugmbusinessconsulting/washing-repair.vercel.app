@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="body" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="45%" stop-color="#cbd5e1"/>
+      <stop offset="100%" stop-color="#94a3b8"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#475569"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <radialGradient id="ring" cx="35%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="45%" stop-color="#cbd5e1"/>
+      <stop offset="100%" stop-color="#64748b"/>
+    </radialGradient>
+    <radialGradient id="glass" cx="50%" cy="42%" r="70%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#0b1120"/>
+    </radialGradient>
+    <linearGradient id="glare" x1="0.1" y1="0" x2="0.9" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5"/>
+      <stop offset="30%" stop-color="#ffffff" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="led" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#6ee7b7"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </radialGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.2" flood-color="#0f172a" flood-opacity="0.35"/>
+    </filter>
+    <clipPath id="doorClip">
+      <circle cx="50" cy="60" r="23.5"/>
+    </clipPath>
+  </defs>
+
+  <rect x="9" y="6" width="82" height="88" rx="13" fill="url(#body)" stroke="#64748b" stroke-width="0.6" filter="url(#shadow)"/>
+
+  <rect x="17" y="14.5" width="66" height="10" rx="4" fill="url(#panel)"/>
+  <circle cx="73" cy="19.5" r="2.1" fill="url(#led)"/>
+  <circle cx="66" cy="19.5" r="2.1" fill="#64748b"/>
+  <circle cx="27" cy="19.5" r="3.4" fill="#334155" stroke="#94a3b8" stroke-width="0.5"/>
+  <rect x="26.4" y="16.6" width="1.2" height="2.6" rx="0.6" fill="#cbd5e1"/>
+
+  <circle cx="50" cy="60" r="30" fill="url(#ring)" filter="url(#shadow)"/>
+  <circle cx="50" cy="60" r="26.5" fill="#1e293b"/>
+  <circle cx="50" cy="60" r="23.5" fill="url(#glass)"/>
+
+  <g clip-path="url(#doorClip)">
+    <path d="M12 40 L45 90 L30 90 L12 62 Z" fill="url(#glare)"/>
+    <ellipse cx="42" cy="50" rx="9" ry="4" fill="#ffffff" opacity="0.18"/>
+  </g>
+
+  <circle cx="50" cy="60" r="23.5" fill="none" stroke="#475569" stroke-width="0.6" opacity="0.6"/>
+</svg>
