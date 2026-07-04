@@ -111,6 +111,11 @@ export default function BrandsMarquee() {
           ))}
         </div>
       </div>
+
+      <p className="text-center text-xs text-slate-400 mt-8 max-w-xl mx-auto px-4">
+        Brand names are used only to indicate the models we service. We are an
+        independent repair provider and are not affiliated with these brands.
+      </p>
     </section>
   );
 }

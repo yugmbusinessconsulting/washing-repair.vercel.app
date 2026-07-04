@@ -56,8 +56,8 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-2.5">
                 <Phone className="w-4 h-4 text-indigo-400 mt-0.5 flex-shrink-0" />
-                <a href="tel:+919987525875" className="hover:text-indigo-400 transition-colors">
-                  9987525875
+                <a href="tel:+916388239273" className="hover:text-indigo-400 transition-colors">
+                  6388 239 273
                 </a>
               </li>
               <li className="flex items-start gap-2.5">
@@ -73,7 +73,18 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs">
+        <div className="border-t border-slate-800 pt-8">
+          <p className="text-xs leading-relaxed max-w-3xl">
+            Home Appliances Repair is an independent washing machine repair
+            service provider. We are not affiliated with, authorised by,
+            endorsed by, or associated with LG, Samsung, Whirlpool, IFB,
+            Bosch, Siemens, Haier, Panasonic, Godrej, or any other appliance
+            brand or manufacturer. Brand names are mentioned only to indicate
+            the models we repair.
+          </p>
+        </div>
+
+        <div className="border-t border-slate-800 mt-6 pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs">
           <p>© 2026 Home Appliances Repair. All rights reserved.</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-indigo-400 transition-colors">
@@ -81,9 +92,6 @@ export default function Footer() {
             </a>
             <a href="#" className="hover:text-indigo-400 transition-colors">
               Privacy Policy
-            </a>
-            <a href="#" className="hover:text-indigo-400 transition-colors">
-              Cookie Policy
             </a>
           </div>
         </div>

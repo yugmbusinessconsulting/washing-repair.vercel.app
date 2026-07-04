@@ -52,77 +52,74 @@ export default function Contact() {
 
         {/* Left info */}
         <div>
-          <span className="text-indigo-600 font-bold text-sm tracking-widest uppercase">
-            Get in Touch
-          </span>
-          <h2 className="text-4xl md:text-5xl font-black text-slate-900 mt-2 mb-6">
-            Book Your <span className="text-indigo-600">Repair</span> Today
+          <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4">
+            Book Your Repair
           </h2>
-          <p className="text-slate-500 text-lg leading-relaxed mb-8">
+          <p className="text-slate-600 text-base leading-relaxed mb-6">
             Fill in the form and we&apos;ll call you back within 30 minutes to confirm
-            your slot. Or reach us directly — we&apos;re always available.
+            your slot. Or reach us directly.
           </p>
 
-          <div className="space-y-4">
+          <div className="space-y-3">
             <a
-              href="tel:+919026561759"
-              className="flex items-center gap-4 bg-white rounded-xl border border-slate-200 p-4 hover:border-indigo-300 hover:shadow-md transition-all group"
+              href="tel:+916388239273"
+              className="flex items-center gap-4 bg-white rounded-lg border border-slate-200 p-4 hover:border-indigo-300 transition-colors"
             >
-              <div className="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center text-indigo-600 group-hover:bg-indigo-600 group-hover:text-white transition-colors">
+              <div className="w-10 h-10 bg-slate-100 rounded-md flex items-center justify-center text-indigo-600">
                 <Phone className="w-5 h-5" />
               </div>
               <div>
-                <p className="text-xs font-bold text-slate-400 uppercase tracking-wider">
+                <p className="text-xs font-semibold text-slate-400 uppercase tracking-wide">
                   Call Us
                 </p>
-                <p className="text-base font-black text-slate-800 group-hover:text-indigo-600 transition-colors">
-                  +91 90265 61759
+                <p className="text-base font-bold text-slate-800">
+                  +91 6388 239 273
                 </p>
               </div>
             </a>
 
             <a
-              href={`https://wa.me/919026561759?text=${encodeURIComponent("Hi I want to service my washing machine")}`}
+              href={`https://wa.me/916388239273?text=${encodeURIComponent("Hi I want to service my washing machine")}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-4 bg-white rounded-xl border border-slate-200 p-4 hover:border-indigo-300 hover:shadow-md transition-all group"
+              className="flex items-center gap-4 bg-white rounded-lg border border-slate-200 p-4 hover:border-indigo-300 transition-colors"
             >
-              <div className="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center text-indigo-600 group-hover:bg-indigo-600 group-hover:text-white transition-colors">
+              <div className="w-10 h-10 bg-slate-100 rounded-md flex items-center justify-center text-indigo-600">
                 <MessageSquare className="w-5 h-5" />
               </div>
               <div>
-                <p className="text-xs font-bold text-slate-400 uppercase tracking-wider">
+                <p className="text-xs font-semibold text-slate-400 uppercase tracking-wide">
                   WhatsApp Us
                 </p>
-                <p className="text-base font-black text-slate-800 group-hover:text-indigo-600 transition-colors">
-                  Chat Now (30s Reply)
+                <p className="text-base font-bold text-slate-800">
+                  Chat Now
                 </p>
               </div>
             </a>
 
-            <div className="flex items-center gap-4 bg-white rounded-xl border border-slate-200 p-4">
-              <div className="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center text-indigo-600">
+            <div className="flex items-center gap-4 bg-white rounded-lg border border-slate-200 p-4">
+              <div className="w-10 h-10 bg-slate-100 rounded-md flex items-center justify-center text-indigo-600">
                 <MapPin className="w-5 h-5" />
               </div>
               <div>
-                <p className="text-xs font-bold text-slate-400 uppercase tracking-wider">
+                <p className="text-xs font-semibold text-slate-400 uppercase tracking-wide">
                   Service Area
                 </p>
-                <p className="text-base font-black text-slate-800">
+                <p className="text-base font-bold text-slate-800">
                   Kopar Khairane, Navi Mumbai
                 </p>
               </div>
             </div>
 
-            <div className="flex items-center gap-4 bg-white rounded-xl border border-slate-200 p-4">
-              <div className="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center text-indigo-600">
+            <div className="flex items-center gap-4 bg-white rounded-lg border border-slate-200 p-4">
+              <div className="w-10 h-10 bg-slate-100 rounded-md flex items-center justify-center text-indigo-600">
                 <Mail className="w-5 h-5" />
               </div>
               <div>
-                <p className="text-xs font-bold text-slate-400 uppercase tracking-wider">
+                <p className="text-xs font-semibold text-slate-400 uppercase tracking-wide">
                   Email Us
                 </p>
-                <p className="text-base font-black text-slate-800">
+                <p className="text-base font-bold text-slate-800">
                   info@city-service.co.in
                 </p>
               </div>
@@ -131,11 +128,11 @@ export default function Contact() {
         </div>
 
         {/* Right form */}
-        <div className="bg-white rounded-2xl border border-slate-200 shadow-xl p-8">
+        <div className="bg-white rounded-lg border border-slate-200 p-8">
           {status === "success" ? (
             <div className="text-center py-12 flex flex-col items-center">
               <CheckCircle className="w-16 h-16 text-green-500 mb-4" />
-              <h3 className="text-2xl font-black text-slate-900 mb-2">Booking Received!</h3>
+              <h3 className="text-2xl font-bold text-slate-900 mb-2">Booking Received!</h3>
               <p className="text-slate-500 mb-6">
                 We&apos;ll call you back within 30 minutes to confirm your slot.
               </p>
@@ -148,7 +145,7 @@ export default function Contact() {
             </div>
           ) : (
             <>
-              <h3 className="text-xl font-black text-slate-900 mb-6">Book a Service Slot</h3>
+              <h3 className="text-xl font-bold text-slate-900 mb-6">Book a Service Slot</h3>
 
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
@@ -212,14 +209,14 @@ export default function Contact() {
                 {status === "error" && (
                   <p className="text-red-500 text-sm bg-red-50 rounded-lg px-4 py-2 flex items-center gap-2">
                     <AlertTriangle className="w-5 h-5 flex-shrink-0" />
-                    <span>Something went wrong. Please call us directly at +91 90265 61759.</span>
+                    <span>Something went wrong. Please call us directly at +91 6388 239 273.</span>
                   </p>
                 )}
 
                 <button
                   type="submit"
                   disabled={status === "loading"}
-                  className="w-full bg-indigo-600 hover:bg-indigo-500 disabled:bg-indigo-300 text-white font-bold py-4 rounded-xl text-base transition-all hover:scale-[1.02] shadow-lg shadow-indigo-600/30 flex items-center justify-center gap-2"
+                  className="w-full bg-indigo-600 hover:bg-indigo-700 disabled:bg-indigo-300 text-white font-bold py-3.5 rounded-md text-base transition-colors flex items-center justify-center gap-2"
                 >
                   {status === "loading" ? (
                     <>

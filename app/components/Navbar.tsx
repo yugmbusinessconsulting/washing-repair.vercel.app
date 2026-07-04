@@ -21,43 +21,31 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-350 ${
-        scrolled
-          ? "bg-white/85 backdrop-blur-md border-b border-slate-200/40 shadow-sm py-3"
-          : "bg-transparent py-5"
+      className={`sticky top-0 z-50 bg-white border-b border-slate-200 ${
+        scrolled ? "shadow-sm" : ""
       }`}
     >
-      <div className="max-w-6xl mx-auto px-4 flex items-center justify-between">
+      <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
         {/* Logo */}
-        <a href="#home" className="flex items-center gap-2 group">
-          <WashingMachine className={`w-7 h-7 transition-transform group-hover:rotate-12 ${scrolled ? "text-indigo-600" : "text-white"}`} />
+        <a href="#home" className="flex items-center gap-2">
+          <WashingMachine className="w-6 h-6 text-indigo-600" />
           <div className="leading-tight">
-            <span
-              className={`font-black text-xl tracking-tight block transition-colors ${
-                scrolled ? "text-slate-900" : "text-white"
-              }`}
-            >
+            <span className="font-bold text-lg text-slate-900 block">
               Home Appliances Repair
             </span>
-            <span
-              className={`text-xs tracking-widest uppercase font-bold transition-colors ${
-                scrolled ? "text-indigo-600" : "text-indigo-300"
-              }`}
-            >
+            <span className="text-[11px] text-slate-500 tracking-wide uppercase">
               Repair Experts
             </span>
           </div>
         </a>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden md:flex items-center gap-7">
           {navLinks.map((l) => (
             <a
               key={l.label}
               href={l.href}
-              className={`text-sm font-bold transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:right-0 after:h-[2px] after:bg-indigo-500 after:transform after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left hover:text-indigo-500 ${
-                scrolled ? "text-slate-700" : "text-white/90"
-              }`}
+              className="text-sm font-medium text-slate-700 hover:text-indigo-600 transition-colors"
             >
               {l.label}
             </a>
@@ -65,18 +53,16 @@ export default function Navbar() {
         </nav>
 
         {/* CTA */}
-        <div className="hidden md:flex items-center gap-5">
+        <div className="hidden md:flex items-center gap-4">
           <a
-            href="tel:+919987525875"
-            className={`text-sm font-extrabold flex items-center gap-1.5 transition-colors hover:text-indigo-500 ${
-              scrolled ? "text-slate-700" : "text-white/95"
-            }`}
+            href="tel:+916388239273"
+            className="text-sm font-semibold flex items-center gap-1.5 text-slate-700 hover:text-indigo-600 transition-colors"
           >
-            <PhoneCall className="w-4 h-4 text-indigo-500" /> 9987525875
+            <PhoneCall className="w-4 h-4" /> 6388 239 273
           </a>
           <a
             href="#contact"
-            className="bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-extrabold px-6 py-3 rounded-full transition-all hover:scale-105 shadow-lg shadow-indigo-600/25"
+            className="bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-md transition-colors"
           >
             Book Service
           </a>
@@ -85,7 +71,8 @@ export default function Navbar() {
         {/* Mobile hamburger */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className={`md:hidden text-2xl p-1 transition-colors ${scrolled ? "text-slate-800" : "text-white"}`}
+          className="md:hidden text-slate-800 p-1"
+          aria-label="Toggle menu"
         >
           {menuOpen ? (
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -101,13 +88,13 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden bg-white/95 backdrop-blur-lg border-b border-slate-200 shadow-xl px-6 py-6 flex flex-col gap-4">
+        <div className="md:hidden bg-white border-t border-slate-200 px-6 py-5 flex flex-col gap-4">
           {navLinks.map((l) => (
             <a
               key={l.label}
               href={l.href}
               onClick={() => setMenuOpen(false)}
-              className="text-slate-800 font-extrabold text-base border-b border-slate-100 pb-3 hover:text-indigo-600 transition-colors"
+              className="text-slate-800 font-semibold text-base border-b border-slate-100 pb-3 hover:text-indigo-600 transition-colors"
             >
               {l.label}
             </a>
@@ -115,7 +102,7 @@ export default function Navbar() {
           <a
             href="#contact"
             onClick={() => setMenuOpen(false)}
-            className="bg-indigo-600 hover:bg-indigo-500 text-white text-center font-extrabold py-3.5 rounded-full mt-2 transition-colors shadow-lg shadow-indigo-600/25"
+            className="bg-indigo-600 hover:bg-indigo-700 text-white text-center font-semibold py-3 rounded-md mt-1 transition-colors"
           >
             Book Service
           </a>

@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 
-const WA_NUMBER = "919026561759";
+const WA_NUMBER = "916388239273";
 const WA_MESSAGE = "Hi I want to service my washing machine";
 const WA_URL = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(WA_MESSAGE)}`;
 
