@@ -1,5 +1,21 @@
 import { Wrench, WashingMachine, Settings, Headphones } from "lucide-react";
 
+const commonRepairs = [
+  "Drum bearing replacement",
+  "Motor repair & replacement",
+  "PCB / control board repair",
+  "Drain pump repair & replacement",
+  "Water inlet valve replacement",
+  "Door lock & hinge repair",
+  "Belt replacement",
+  "Timer & knob repair",
+  "Heating element repair",
+  "Machine not spinning",
+  "Machine not draining",
+  "Water leakage fix",
+  "Excessive noise & vibration",
+];
+
 const services = [
   {
     icon: Wrench,
@@ -36,7 +52,10 @@ export default function Services() {
             Services We Offer
           </h2>
           <p className="text-slate-600 text-base max-w-xl">
-            From quick fixes to full installations, at your doorstep.
+            From quick fixes to full installations, at your doorstep. We
+            repair every type of washing machine — front load, top load,
+            semi-automatic, fully automatic, single-tub and twin-tub — of
+            any brand.
           </p>
         </div>
 
@@ -61,6 +80,23 @@ export default function Services() {
               </div>
             );
           })}
+        </div>
+
+        {/* Common repairs handled */}
+        <div className="mt-12 bg-slate-50 rounded-lg border border-slate-200 p-6">
+          <h3 className="font-bold text-slate-900 text-base mb-4">
+            Common Repairs We Handle
+          </h3>
+          <div className="flex flex-wrap gap-2">
+            {commonRepairs.map((item) => (
+              <span
+                key={item}
+                className="text-xs font-medium text-slate-600 bg-white border border-slate-200 rounded-full px-3 py-1.5"
+              >
+                {item}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
     </section>
