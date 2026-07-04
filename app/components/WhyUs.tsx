@@ -43,11 +43,11 @@ export default function WhyUs() {
             Why Choose Us
           </span>
           <h2 className="text-4xl md:text-5xl font-black text-slate-900 mt-2 mb-6">
-            Pune&apos;s Most{" "}
+            Navi Mumbai&apos;s Most{" "}
             <span className="text-indigo-600">Trusted</span> Repair Team
           </h2>
           <p className="text-slate-500 text-lg leading-relaxed mb-8">
-            City Appliance has been serving households across Pune with fast,
+            City Appliance has been serving households across Kopar Khairane, Navi Mumbai with fast,
             reliable washing machine repairs. We believe in doing it right the
             first time — with quality parts, honest pricing, and a team you can
             trust.
@@ -63,7 +63,7 @@ export default function WhyUs() {
                 Customer Satisfaction
               </p>
               <p className="text-slate-400 text-sm">
-                Based on 500+ completed doorstep repairs across Pune City.
+                Based on 500+ completed doorstep repairs across Kopar Khairane, Navi Mumbai.
               </p>
             </div>
           </div>

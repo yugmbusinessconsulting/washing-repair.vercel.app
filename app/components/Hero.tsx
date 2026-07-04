@@ -39,7 +39,7 @@ export default function Hero() {
           {/* Stats row */}
           <div className="flex gap-10 mb-10 border-t border-b border-slate-800/80 py-6 max-w-lg">
             {[
-              { num: "500+", label: "Pune Repairs" },
+              { num: "₹150", label: "Visiting Charge" },
               { num: "Same Day", label: "Doorstep Visit" },
               { num: "Genuine", label: "Spare Parts" },
             ].map((s) => (
@@ -68,7 +68,7 @@ export default function Hero() {
           {/* Trust rating badge */}
           <p className="text-xs text-slate-400 font-medium mt-6 flex items-center gap-2">
             <span className="text-amber-400 text-sm">★★★★★</span>
-            <span>4.9/5 Rating based on 500+ verified Pune reviews</span>
+            <span>4.9/5 Rating based on 500+ verified Navi Mumbai reviews</span>
           </p>
         </div>
 

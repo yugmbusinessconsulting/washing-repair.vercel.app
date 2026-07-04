@@ -15,18 +15,18 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "City Appliance — Washing Machine Repair in Pune",
+  title: "City Appliance — Washing Machine Repair in Navi Mumbai",
   description:
-    "Professional washing machine repair at your doorstep in Pune. All brands — LG, Samsung, Whirlpool, IFB, Bosch. Same-day service, genuine parts, affordable pricing.",
+    "Professional washing machine repair at your doorstep in Kopar Khairane, Navi Mumbai. All brands — LG, Samsung, Whirlpool, IFB, Bosch. Same-day service, genuine parts, affordable pricing.",
   keywords: [
-    "washing machine repair pune",
+    "washing machine repair navi mumbai",
     "lg washing machine repair",
     "samsung washing machine service",
-    "doorstep repair pune",
+    "doorstep repair kopar khairane",
     "whirlpool repair",
   ],
   openGraph: {
-    title: "City Appliance — Washing Machine Repair in Pune",
+    title: "City Appliance — Washing Machine Repair in Navi Mumbai",
     description: "Same-day doorstep washing machine repair. All brands. Genuine parts.",
     type: "website",
   },

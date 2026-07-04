@@ -11,7 +11,7 @@ const steps = [
     step: "02",
     icon: UserCheck,
     title: "Technician Arrives",
-    desc: "Our certified technician reaches your doorstep — usually the same day. No extra travel charges in Pune.",
+    desc: "Our certified technician reaches your doorstep — usually the same day. Just a ₹150 visiting charge for your location.",
   },
   {
     step: "03",

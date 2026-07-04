@@ -109,7 +109,7 @@ export default function Contact() {
                   Service Area
                 </p>
                 <p className="text-base font-black text-slate-800">
-                  Pune City, Maharashtra
+                  Kopar Khairane, Navi Mumbai
                 </p>
               </div>
             </div>

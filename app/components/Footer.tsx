@@ -20,7 +20,7 @@ export default function Footer() {
             </div>
             <p className="text-sm leading-relaxed max-w-sm">
               Fast, reliable, and affordable washing machine repair at your
-              doorstep in Pune. All major brands, genuine spare parts, same-day
+              doorstep in Kopar Khairane, Navi Mumbai. All major brands, genuine spare parts, same-day
               service.
             </p>
           </div>
@@ -52,7 +52,7 @@ export default function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-indigo-400 mt-0.5 flex-shrink-0" />
-                <span>Pune City, Maharashtra</span>
+                <span>Kopar Khairane, Navi Mumbai</span>
               </li>
               <li className="flex items-start gap-2.5">
                 <Phone className="w-4 h-4 text-indigo-400 mt-0.5 flex-shrink-0" />
