@@ -2,8 +2,7 @@
 import { useState } from "react";
 import { Phone, MessageSquare, MapPin, Mail, CheckCircle, AlertTriangle } from "lucide-react";
 
-// After deploying your Google Apps Script, paste the URL here:
-const APPS_SCRIPT_URL = process.env.NEXT_PUBLIC_APPS_SCRIPT_URL || "";
+const WHATSAPP_NUMBER = "916388239273";
 
 export default function Contact() {
   const [form, setForm] = useState({
@@ -12,36 +11,32 @@ export default function Contact() {
     brand: "",
     issue: "",
   });
-  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
 
   const brands = [
     "LG", "Samsung", "Whirlpool", "IFB", "Bosch",
     "Siemens", "Haier", "Panasonic", "Godrej", "Electrolux", "Other",
   ];
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setStatus("loading");
 
-    try {
-      // Google Apps Script Web Apps need no-cors + FormData or URL params
-      const params = new URLSearchParams({
-        name: form.name,
-        phone: form.phone,
-        brand: form.brand,
-        issue: form.issue,
-        timestamp: new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata" }),
-      });
+    const message = [
+      "New Repair Booking Request",
+      "",
+      `Name: ${form.name}`,
+      `Phone: ${form.phone}`,
+      `Brand: ${form.brand}`,
+      `Issue: ${form.issue || "Not specified"}`,
+    ].join("\n");
 
-      await fetch(`${APPS_SCRIPT_URL}?${params.toString()}`, {
-        method: "GET",
-        mode: "no-cors", // Apps Script requires this
-      });
+    const waUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+    const win = window.open(waUrl, "_blank", "noopener,noreferrer");
 
-      // no-cors means we can't read the response — assume success if no throw
+    if (win) {
       setStatus("success");
       setForm({ name: "", phone: "", brand: "", issue: "" });
-    } catch {
+    } else {
       setStatus("error");
     }
   };
@@ -132,9 +127,10 @@ export default function Contact() {
           {status === "success" ? (
             <div className="text-center py-12 flex flex-col items-center">
               <CheckCircle className="w-16 h-16 text-green-500 mb-4" />
-              <h3 className="text-2xl font-bold text-slate-900 mb-2">Booking Received!</h3>
+              <h3 className="text-2xl font-bold text-slate-900 mb-2">Almost Done!</h3>
               <p className="text-slate-500 mb-6">
-                We&apos;ll call you back within 30 minutes to confirm your slot.
+                We&apos;ve opened WhatsApp with your booking details filled in —
+                just hit Send to confirm your slot.
               </p>
               <button
                 onClick={() => setStatus("idle")}
@@ -209,30 +205,23 @@ export default function Contact() {
                 {status === "error" && (
                   <p className="text-red-500 text-sm bg-red-50 rounded-lg px-4 py-2 flex items-center gap-2">
                     <AlertTriangle className="w-5 h-5 flex-shrink-0" />
-                    <span>Something went wrong. Please call us directly at +91 6388 239 273.</span>
+                    <span>
+                      Couldn&apos;t open WhatsApp automatically. Please allow
+                      pop-ups, or message us directly at +91 6388 239 273.
+                    </span>
                   </p>
                 )}
 
                 <button
                   type="submit"
-                  disabled={status === "loading"}
-                  className="w-full bg-indigo-600 hover:bg-indigo-700 disabled:bg-indigo-300 text-white font-bold py-3.5 rounded-md text-base transition-colors flex items-center justify-center gap-2"
+                  className="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3.5 rounded-md text-base transition-colors flex items-center justify-center gap-2"
                 >
-                  {status === "loading" ? (
-                    <>
-                      <svg className="animate-spin w-5 h-5" viewBox="0 0 24 24" fill="none">
-                        <circle className="opacity-25" cx="12" cy="12" r="10" stroke="white" strokeWidth="4" />
-                        <path className="opacity-75" fill="white" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" />
-                      </svg>
-                      Submitting...
-                    </>
-                  ) : (
-                    "Book My Repair Slot →"
-                  )}
+                  <MessageSquare className="w-5 h-5" />
+                  Send Booking via WhatsApp
                 </button>
 
                 <p className="text-center text-xs text-slate-400">
-                  We&apos;ll call you back within 30 minutes ✓
+                  Opens WhatsApp with your details pre-filled ✓
                 </p>
               </form>
             </>
