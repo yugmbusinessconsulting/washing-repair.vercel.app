@@ -63,10 +63,10 @@ export default function Footer() {
               <li className="flex items-start gap-2.5">
                 <Mail className="w-4 h-4 text-indigo-400 mt-0.5 flex-shrink-0" />
                 <a
-                  href="mailto:info@city-service.co.in"
+                  href="mailto:homeappliancesrepair913@gmail.com"
                   className="hover:text-indigo-400 transition-colors"
                 >
-                  info@city-service.co.in
+                  homeappliancesrepair913@gmail.com
                 </a>
               </li>
             </ul>
