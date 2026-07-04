@@ -11,7 +11,7 @@ export default function Footer() {
               <WashingMachine className="w-8 h-8 text-indigo-500" />
               <div>
                 <span className="font-black text-xl text-white block">
-                  City Appliance
+                  Home Appliances Repair
                 </span>
                 <span className="text-xs text-indigo-400 tracking-widest uppercase">
                   Repair Experts
@@ -74,7 +74,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs">
-          <p>© 2026 City Appliance. All rights reserved.</p>
+          <p>© 2026 Home Appliances Repair. All rights reserved.</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-indigo-400 transition-colors">
               Terms of Service

@@ -37,7 +37,7 @@ export default function Navbar() {
                 scrolled ? "text-slate-900" : "text-white"
               }`}
             >
-              City Appliance
+              Home Appliances Repair
             </span>
             <span
               className={`text-xs tracking-widest uppercase font-bold transition-colors ${

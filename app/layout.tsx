@@ -15,7 +15,7 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "City Appliance — Washing Machine Repair in Navi Mumbai",
+  title: "Home Appliances Repair — Washing Machine Repair in Navi Mumbai",
   description:
     "Professional washing machine repair at your doorstep in Kopar Khairane, Navi Mumbai. All brands — LG, Samsung, Whirlpool, IFB, Bosch. Same-day service, genuine parts, affordable pricing.",
   keywords: [
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     "whirlpool repair",
   ],
   openGraph: {
-    title: "City Appliance — Washing Machine Repair in Navi Mumbai",
+    title: "Home Appliances Repair — Washing Machine Repair in Navi Mumbai",
     description: "Same-day doorstep washing machine repair. All brands. Genuine parts.",
     type: "website",
   },

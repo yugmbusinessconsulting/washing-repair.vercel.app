@@ -47,7 +47,7 @@ export default function WhyUs() {
             <span className="text-indigo-600">Trusted</span> Repair Team
           </h2>
           <p className="text-slate-500 text-lg leading-relaxed mb-8">
-            City Appliance has been serving households across Kopar Khairane, Navi Mumbai with fast,
+            Home Appliances Repair has been serving households across Kopar Khairane, Navi Mumbai with fast,
             reliable washing machine repairs. We believe in doing it right the
             first time — with quality parts, honest pricing, and a team you can
             trust.
