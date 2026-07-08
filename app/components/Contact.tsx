@@ -115,7 +115,7 @@ export default function Contact() {
                   Email Us
                 </p>
                 <p className="text-base font-bold text-slate-800">
-                  homeappliancesrepair913@gmail.com
+                  fixmate041@gmail.com
                 </p>
               </div>
             </div>

@@ -64,10 +64,10 @@ export default function Footer() {
               <li className="flex items-start gap-2.5">
                 <Mail className="w-4 h-4 text-indigo-400 mt-0.5 flex-shrink-0" />
                 <a
-                  href="mailto:homeappliancesrepair913@gmail.com"
+                  href="mailto:fixmate041@gmail.com"
                   className="hover:text-indigo-400 transition-colors"
                 >
-                  homeappliancesrepair913@gmail.com
+                  fixmate041@gmail.com
                 </a>
               </li>
             </ul>
