@@ -21,8 +21,10 @@ export default function Footer() {
             </div>
             <p className="text-sm leading-relaxed max-w-sm">
               Fast, reliable, and affordable washing machine repair at your
-              doorstep in Kopar Khairane, Navi Mumbai. All major brands, genuine spare parts, same-day
-              service.
+              doorstep in Kopar Khairane and across Navi Mumbai — Vashi,
+              Ghansoli, Kharghar, CBD Belapur, Nerul, Sanpada, Panvel,
+              Kamothe, Ulwe and Airoli. All major brands, genuine spare
+              parts, same-day service.
             </p>
           </div>
 
@@ -32,13 +34,18 @@ export default function Footer() {
               Quick Links
             </h4>
             <ul className="space-y-2">
-              {["Home", "Services", "About", "Contact Us"].map((l) => (
-                <li key={l}>
+              {[
+                { label: "Home", href: "/#home" },
+                { label: "Services", href: "/#services" },
+                { label: "About", href: "/#about" },
+                { label: "Contact Us", href: "/#contact" },
+              ].map((l) => (
+                <li key={l.label}>
                   <a
-                    href={`#${l.toLowerCase().replace(" ", "")}`}
+                    href={l.href}
                     className="text-sm hover:text-indigo-400 transition-colors"
                   >
-                    {l}
+                    {l.label}
                   </a>
                 </li>
               ))}
@@ -88,10 +95,10 @@ export default function Footer() {
         <div className="border-t border-slate-800 mt-6 pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs">
           <p>© 2026 FixMate Home Appliances Repair. All rights reserved.</p>
           <div className="flex gap-6">
-            <a href="#" className="hover:text-indigo-400 transition-colors">
+            <a href="/terms-of-service" className="hover:text-indigo-400 transition-colors">
               Terms of Service
             </a>
-            <a href="#" className="hover:text-indigo-400 transition-colors">
+            <a href="/privacy-policy" className="hover:text-indigo-400 transition-colors">
               Privacy Policy
             </a>
           </div>

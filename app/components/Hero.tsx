@@ -7,13 +7,14 @@ export default function Hero() {
       <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
         <div>
           <h1 className="text-3xl md:text-4xl font-bold text-slate-900 leading-tight mb-4">
-            Washing Machine Repair in Kopar Khairane, Navi Mumbai
+            Washing Machine Repair in Kopar Khairane &amp; Across Navi Mumbai
           </h1>
 
           <p className="text-slate-600 text-base md:text-lg leading-relaxed mb-6">
             Doorstep repair for all major brands — LG, Samsung, Whirlpool,
-            IFB, Bosch, Siemens, Haier, Panasonic and Godrej. Front load,
-            top load, semi-automatic and fully automatic machines.
+            IFB, Bosch, Siemens, Haier, Panasonic and Godrej. Serving Vashi,
+            Ghansoli, Kharghar, CBD Belapur, Nerul, Sanpada, Panvel, Kamothe,
+            Ulwe, Airoli and Kopar Khairane.
           </p>
 
           <ul className="text-slate-700 text-sm space-y-2 mb-8">

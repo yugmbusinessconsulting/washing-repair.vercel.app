@@ -14,10 +14,10 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { label: "Home", href: "#home" },
-    { label: "Services", href: "#services" },
-    { label: "About", href: "#about" },
-    { label: "Contact", href: "#contact" },
+    { label: "Home", href: "/#home" },
+    { label: "Services", href: "/#services" },
+    { label: "About", href: "/#about" },
+    { label: "Contact", href: "/#contact" },
   ];
 
   return (
@@ -28,7 +28,7 @@ export default function Navbar() {
     >
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
         {/* Logo */}
-        <a href="#home" className="flex items-center gap-2">
+        <a href="/#home" className="flex items-center gap-2">
           <Image src="/logo-icon.svg" alt="FixMate Home Appliances Repair logo" width={28} height={28} className="w-7 h-7" />
           <div className="leading-tight">
             <span className="font-display font-bold text-lg text-slate-900 block">
@@ -62,7 +62,7 @@ export default function Navbar() {
             <PhoneCall className="w-4 h-4" /> 6388 239 273
           </a>
           <a
-            href="#contact"
+            href="/#contact"
             className="bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-5 py-2.5 rounded-md transition-colors"
           >
             Book Service
@@ -101,7 +101,7 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="#contact"
+            href="/#contact"
             onClick={() => setMenuOpen(false)}
             className="bg-indigo-600 hover:bg-indigo-700 text-white text-center font-semibold py-3 rounded-md mt-1 transition-colors"
           >

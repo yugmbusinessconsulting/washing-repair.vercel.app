@@ -53,10 +53,12 @@ export default function WhyUs() {
             Why Choose Us
           </h2>
           <p className="text-slate-600 text-base leading-relaxed">
-            FixMate Home Appliances Repair serves households across Kopar Khairane,
-            Navi Mumbai with washing machine repairs. We are an independent
-            local service provider — not affiliated with or authorised by
-            any appliance brand or manufacturer.
+            FixMate Home Appliances Repair serves households across Kopar
+            Khairane and Navi Mumbai — including Vashi, Ghansoli, Kharghar,
+            CBD Belapur, Nerul, Sanpada, Panvel, Kamothe, Ulwe and Airoli —
+            with washing machine repairs. We are an independent local service
+            provider — not affiliated with or authorised by any appliance
+            brand or manufacturer.
           </p>
         </div>
 
