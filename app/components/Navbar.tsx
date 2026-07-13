@@ -29,10 +29,10 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
         {/* Logo */}
         <a href="#home" className="flex items-center gap-2">
-          <Image src="/logo-icon.svg" alt="Home Appliances Repair logo" width={28} height={28} className="w-7 h-7" />
+          <Image src="/logo-icon.svg" alt="FixMate Home Appliances Repair logo" width={28} height={28} className="w-7 h-7" />
           <div className="leading-tight">
-            <span className="font-bold text-lg text-slate-900 block">
-              Home Appliances Repair
+            <span className="font-display font-bold text-lg text-slate-900 block">
+              FixMate Home Appliances Repair
             </span>
             <span className="text-[11px] text-slate-500 tracking-wide uppercase">
               Repair Experts
