@@ -10,6 +10,7 @@ const commonRepairs = [
   "Belt replacement",
   "Timer & knob repair",
   "Heating element repair",
+  "Lid switch repair",
   "Machine not spinning",
   "Machine not draining",
   "Water leakage fix",
@@ -49,13 +50,13 @@ export default function Services() {
       <div className="max-w-6xl mx-auto">
         <div className="mb-12">
           <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-2">
-            Services We Offer
+            Washing Machine Repair Near Me — Services We Offer
           </h2>
           <p className="text-slate-600 text-base max-w-xl">
-            From quick fixes to full installations, at your doorstep. We
-            repair every type of washing machine — front load, top load,
-            semi-automatic, fully automatic, single-tub and twin-tub — of
-            any brand.
+            A full appliance repair service, from quick fixes to full
+            installations, at your doorstep. We repair every type of washing
+            machine — front load, top load, semi-automatic, fully automatic,
+            single-tub and twin-tub — of any brand.
           </p>
         </div>
 
