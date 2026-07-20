@@ -17,8 +17,8 @@ const outfit = Outfit({
   display: "swap",
 });
 
-const SITE_URL = "https://fix-matee.vercel.app";
-const SITE_TITLE = "FixMate Home Appliances Repair — Washing Machine Repair in Navi Mumbai";
+const SITE_URL = "https://www.perfectappliancerepair.in";
+const SITE_TITLE = "Perfect Appliance Repair — Washing Machine Repair in Navi Mumbai";
 const SITE_DESCRIPTION =
   "Professional washing machine repair at your doorstep across Navi Mumbai — Kopar Khairane, Vashi, Ghansoli, Kharghar, CBD Belapur, Nerul, Sanpada, Panvel, Kamothe, Ulwe and Airoli. All brands — LG, Samsung, Whirlpool, IFB, Bosch. Same-day service, genuine parts, affordable pricing.";
 
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     default: SITE_TITLE,
-    template: "%s | FixMate Home Appliances Repair",
+    template: "%s | Perfect Appliance Repair",
   },
   description: SITE_DESCRIPTION,
   keywords: [
@@ -74,7 +74,7 @@ export const metadata: Metadata = {
     title: SITE_TITLE,
     description: "Same-day doorstep washing machine repair across Navi Mumbai. All brands. Genuine parts.",
     url: SITE_URL,
-    siteName: "FixMate Home Appliances Repair",
+    siteName: "Perfect Appliance Repair",
     locale: "en_IN",
     type: "website",
     images: [
@@ -82,7 +82,7 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "FixMate Home Appliances Repair — Washing Machine Repair in Navi Mumbai",
+        alt: "Perfect Appliance Repair — Washing Machine Repair in Navi Mumbai",
       },
     ],
   },
@@ -107,11 +107,10 @@ const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "@id": `${SITE_URL}/#business`,
-  name: "FixMate Home Appliances Repair",
+  name: "Perfect Appliance Repair",
   image: `${SITE_URL}/og-image.png`,
   url: SITE_URL,
   telephone: "+91-6388239273",
-  email: "fixmate041@gmail.com",
   priceRange: "₹150 onwards",
   address: {
     "@type": "PostalAddress",

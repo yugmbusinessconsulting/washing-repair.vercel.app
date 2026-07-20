@@ -6,7 +6,7 @@ import WhatsAppFloat from "../components/WhatsAppFloat";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
-    "How FixMate Home Appliances Repair collects and uses information from visitors and customers in Kopar Khairane, Navi Mumbai.",
+    "How Perfect Appliance Repair collects and uses information from visitors and customers in Kopar Khairane, Navi Mumbai.",
   alternates: {
     canonical: "/privacy-policy",
   },
@@ -24,7 +24,7 @@ export default function PrivacyPolicy() {
 
           <div className="space-y-8 text-slate-600 text-base leading-relaxed">
             <p>
-              FixMate Home Appliances Repair (&quot;we&quot;, &quot;us&quot;) provides doorstep
+              Perfect Appliance Repair (&quot;we&quot;, &quot;us&quot;) provides doorstep
               washing machine repair services in Kopar Khairane, Navi Mumbai. This
               page explains what information we collect through this website and
               how we use it.
@@ -92,12 +92,12 @@ export default function PrivacyPolicy() {
               <p>
                 We keep customer details only as long as needed for service
                 follow-up or warranty support. To ask us to correct or delete
-                information we hold about you, email{" "}
+                information we hold about you, call us at{" "}
                 <a
-                  href="mailto:fixmate041@gmail.com"
+                  href="tel:+916388239273"
                   className="text-indigo-600 hover:text-indigo-700 font-semibold"
                 >
-                  fixmate041@gmail.com
+                  +91 6388 239 273
                 </a>
                 .
               </p>
@@ -119,13 +119,6 @@ export default function PrivacyPolicy() {
                 Questions about this policy? Call us at{" "}
                 <a href="tel:+916388239273" className="text-indigo-600 hover:text-indigo-700 font-semibold">
                   +91 6388 239 273
-                </a>{" "}
-                or email{" "}
-                <a
-                  href="mailto:fixmate041@gmail.com"
-                  className="text-indigo-600 hover:text-indigo-700 font-semibold"
-                >
-                  fixmate041@gmail.com
                 </a>
                 .
               </p>

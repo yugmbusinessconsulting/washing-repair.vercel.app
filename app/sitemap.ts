@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const SITE_URL = "https://fix-matee.vercel.app";
+const SITE_URL = "https://www.perfectappliancerepair.in";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [

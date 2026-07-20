@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { MapPin, Phone, Mail } from "lucide-react";
+import { MapPin, Phone } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -9,10 +9,10 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <Image src="/logo-icon.svg" alt="FixMate Home Appliances Repair logo" width={36} height={36} className="w-9 h-9" />
+              <Image src="/logo-icon.svg" alt="Perfect Appliance Repair logo" width={36} height={36} className="w-9 h-9" />
               <div>
                 <span className="font-display font-black text-xl text-white block">
-                  FixMate Home Appliances Repair
+                  Perfect Appliance Repair
                 </span>
                 <span className="text-xs text-indigo-400 tracking-widest uppercase">
                   Repair Experts
@@ -68,22 +68,13 @@ export default function Footer() {
                   6388 239 273
                 </a>
               </li>
-              <li className="flex items-start gap-2.5">
-                <Mail className="w-4 h-4 text-indigo-400 mt-0.5 flex-shrink-0" />
-                <a
-                  href="mailto:fixmate041@gmail.com"
-                  className="hover:text-indigo-400 transition-colors"
-                >
-                  fixmate041@gmail.com
-                </a>
-              </li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-slate-800 pt-8">
           <p className="text-xs leading-relaxed max-w-3xl">
-            FixMate Home Appliances Repair is an independent washing machine repair
+            Perfect Appliance Repair is an independent washing machine repair
             service provider. We are not affiliated with, authorised by,
             endorsed by, or associated with LG, Samsung, Whirlpool, IFB,
             Bosch, Siemens, Haier, Panasonic, Godrej, or any other appliance
@@ -93,7 +84,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-slate-800 mt-6 pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs">
-          <p>© 2026 FixMate Home Appliances Repair. All rights reserved.</p>
+          <p>© 2026 Perfect Appliance Repair. All rights reserved.</p>
           <div className="flex gap-6">
             <a href="/terms-of-service" className="hover:text-indigo-400 transition-colors">
               Terms of Service

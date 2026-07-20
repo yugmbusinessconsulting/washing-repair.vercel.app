@@ -6,7 +6,7 @@ import WhatsAppFloat from "../components/WhatsAppFloat";
 export const metadata: Metadata = {
   title: "Terms of Service",
   description:
-    "Terms governing washing machine repair bookings and service with FixMate Home Appliances Repair in Kopar Khairane, Navi Mumbai.",
+    "Terms governing washing machine repair bookings and service with Perfect Appliance Repair in Kopar Khairane, Navi Mumbai.",
   alternates: {
     canonical: "/terms-of-service",
   },
@@ -25,7 +25,7 @@ export default function TermsOfService() {
           <div className="space-y-8 text-slate-600 text-base leading-relaxed">
             <p>
               These terms apply when you book or use washing machine repair
-              services from FixMate Home Appliances Repair (&quot;we&quot;, &quot;us&quot;) in
+              services from Perfect Appliance Repair (&quot;we&quot;, &quot;us&quot;) in
               Kopar Khairane, Navi Mumbai, whether through this website, phone,
               or WhatsApp. By booking a service, you agree to these terms.
             </p>
@@ -128,13 +128,6 @@ export default function TermsOfService() {
                 Questions about these terms? Call us at{" "}
                 <a href="tel:+916388239273" className="text-indigo-600 hover:text-indigo-700 font-semibold">
                   +91 6388 239 273
-                </a>{" "}
-                or email{" "}
-                <a
-                  href="mailto:fixmate041@gmail.com"
-                  className="text-indigo-600 hover:text-indigo-700 font-semibold"
-                >
-                  fixmate041@gmail.com
                 </a>
                 .
               </p>

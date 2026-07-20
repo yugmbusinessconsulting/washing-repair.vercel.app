@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { Phone, MessageSquare, MapPin, Mail, AlertTriangle } from "lucide-react";
+import { Phone, MessageSquare, MapPin, AlertTriangle } from "lucide-react";
 
 const WHATSAPP_NUMBER = "916388239273";
 
@@ -104,20 +104,6 @@ export default function Contact() {
                 </p>
                 <p className="text-base font-bold text-slate-800">
                   Kopar Khairane, Navi Mumbai
-                </p>
-              </div>
-            </div>
-
-            <div className="flex items-center gap-4 bg-white rounded-lg border border-slate-200 p-4">
-              <div className="w-10 h-10 bg-slate-100 rounded-md flex items-center justify-center text-indigo-600">
-                <Mail className="w-5 h-5" />
-              </div>
-              <div>
-                <p className="text-xs font-semibold text-slate-400 uppercase tracking-wide">
-                  Email Us
-                </p>
-                <p className="text-base font-bold text-slate-800">
-                  fixmate041@gmail.com
                 </p>
               </div>
             </div>
